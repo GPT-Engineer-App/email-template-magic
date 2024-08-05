@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { Camera } from "lucide-react";
+import { Camera, Instagram, Facebook } from "lucide-react";
 
 const data = [
   { name: 'Jan', value: 400 },
@@ -83,6 +83,18 @@ const Index = () => {
           This is a sample image placeholder
         </CardFooter>
       </Card>
+
+      <footer className="mt-8 text-center">
+        <p className="mb-4">Follow us on social media:</p>
+        <div className="flex justify-center space-x-4">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <Instagram className="h-6 w-6 text-gray-600 hover:text-gray-800" />
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <Facebook className="h-6 w-6 text-gray-600 hover:text-gray-800" />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 };
